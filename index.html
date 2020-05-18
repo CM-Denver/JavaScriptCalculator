@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+</head>
+<body>
+
+    <input type="text" id="inputnumber">
+
+    <div class="grid">      
+        <input class="button" type="button" value="1" onclick="addToString('1');">
+        
+        <input class="button" type="button" value="2" onclick="addToString('2');">
+        
+        <input class="button" type="button" value="3" onclick="addToString('3');">
+
+        <input class="button" type="button" value="4" onclick="addToString('4');">
+
+        <input class="button" type="button" value="5" onclick="addToString('5');">
+
+        <input class="button" type="button" value="6" onclick="addToString('6');">
+
+        <input class="button" type="button" value="7" onclick="addToString('7');">
+
+        <input class="button" type="button" value="8" onclick="addToString('8');">
+
+        <input class="button" type="button" value="9" onclick="addToString('9');">
+
+        <input class="button" type="button" value="0" onclick="addToString('0');">
+
+        <input class="button" type="button" value="+" onclick="add();">
+
+        <input class="button" type="button" value="-" onclick="subtract();">
+
+        <input class="button" type="button" value="*" onclick="multiply();">
+
+        <input class="button" type="button" value="/" onclick="divide();">
+
+        <input class="button" type="button" value="=" onclick="solve();">
+    </div>
+
+    <script src="index.js"></script>
+
+    <style>
+        body, html
+        {
+            height: 100;
+            margin: 0;
+        }
+
+        .grid
+        {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 4%;
+        }
+
+        .button
+        {
+            font-size: 48px;
+        }
+
+        #inputnumber
+        {
+            height: 20%;
+            width: 100%;
+            font-size: 24pt;
+        }
+    </style>
+    
+</body>
+</html>
